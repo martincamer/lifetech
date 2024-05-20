@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -10,36 +11,44 @@ export const Footer = () => {
           </h1>
           <ul>
             <li className="py-3">
-              <a
-                href="/es/nosotros/"
+              <Link
+                to="/nosotros"
                 className="text-slate-300 font-normal tracking-wide"
               >
                 Nosotros
-              </a>
+              </Link>
             </li>
             <li className="py-3">
-              <a
-                href="/es/trabaja_con_nosotros/"
+              <Link
+                to="/work"
                 className="text-slate-300 font-normal tracking-wide"
               >
                 Trabaja con nosotros
-              </a>
+              </Link>
             </li>
             <li className="py-3">
-              <a
-                href="/es/contacto/"
+              <Link
+                to="/servicios"
+                className="text-slate-300 font-normal tracking-wide"
+              >
+                Servicios
+              </Link>
+            </li>
+            <li className="py-3">
+              <Link
+                to="/contacto"
                 className="text-slate-300 font-normal tracking-wide"
               >
                 Contacto
-              </a>
+              </Link>
             </li>
             <li className="py-3">
-              <a
-                href="/es/nosotros/"
+              <Link
+                to="/blog"
                 className="text-slate-300 font-normal tracking-wide"
               >
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -49,43 +58,43 @@ export const Footer = () => {
           </h1>
           <ul>
             <li className="py-3">
-              <a
-                href="/es/it_project_outsourcing/"
+              <Link
+                to="/servicio/desarrollo-web"
                 className="text-slate-300 font-normal tracking-wide"
               >
                 Desarrollo web
-              </a>
+              </Link>
             </li>
             <li className="py-3">
-              <a
-                href="/es/staff_augmentation/"
+              <Link
+                to="/servicio/desarrollo-software"
                 className="text-slate-300 font-normal tracking-wide"
               >
                 Desarrollo de software
-              </a>
+              </Link>
             </li>
             <li className="py-3">
-              <a
-                href="/es/staff_augmentation/"
+              <Link
+                to="/servicio/desarrollo-movil"
                 className="text-slate-300 font-normal tracking-wide"
               >
                 Desarrollo de aplicaciónes móviles
-              </a>
+              </Link>
             </li>
-            <li className="py-3">
-              <a
-                href="/es/staff_augmentation/"
+            {/* <li className="py-3">
+              <Link
+                to="/es/staff_augmentation/"
                 className="text-slate-300 font-normal tracking-wide"
               >
                 Mantenimiento o soluciones
-              </a>
-            </li>
+              </Link>
+            </li> */}
           </ul>
         </div>
         <div className="flex flex-row -ml-3 mt-6 md:flex-row">
           <div className="px-3 py-3">
-            <a
-              href="https://www.instagram.com/nerdo.solutions/"
+            <Link
+              to="https://www.instagram.com/lifetech_solutions/"
               target="_blank"
               className="text-lime-200 flex align-top"
             >
@@ -104,11 +113,11 @@ export const Footer = () => {
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
               </svg>
-            </a>
+            </Link>
           </div>
-          <div className="px-3 py-3">
-            <a
-              href="https://www.linkedin.com/company/nerdo-solutions"
+          {/* <div className="px-3 py-3">
+            <Link
+              to="https://www.linkedin.com/company/nerdo-solutions"
               target="_blank"
               className="text-lime-200 flex align-top"
             >
@@ -127,11 +136,11 @@ export const Footer = () => {
                 <rect width="4" height="12" x="2" y="9"></rect>
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
-            </a>
-          </div>
+            </Link>
+          </div> */}
           <div className="px-3 py-3">
-            <a
-              href="mailto:info@nerdo.solutions"
+            <Link
+              to="mailto:info@lifetech.solutions"
               target="_blank"
               className="text-lime-200 flex align-top"
             >
@@ -149,7 +158,7 @@ export const Footer = () => {
                 <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

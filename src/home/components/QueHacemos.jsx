@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const QueHacemos = () => {
   return (
@@ -14,7 +15,7 @@ export const QueHacemos = () => {
       <div className="flex flex-col md:flex-row md:gap-32">
         <div className="w-72 h-auto bg-[#2F2E41] block mb-12 md:w-96 xsm:w-[450px]">
           <div className="flex flex-col mr-2 mb-2 -ml-2 -mt-2 w-72 md:w-96 h-80 md:h-[100%] py-5 xsm:w-[450px] bg-white hover:bg-lime-100 xsm:h-[420px]">
-            <a href="/es/it_project_outsourcing">
+            <Link to="/servicios">
               <h2 className="flex justify-center items-center text-center text-[#6946B3] font-semibold text-xl md:text-2xl mt-5 mb-2 md:m-10 xsm:text-2xl xsm:mt-10 xsm:mb-10">
                 Desarrollamos tu Software a medida
               </h2>
@@ -32,12 +33,12 @@ export const QueHacemos = () => {
                 Desarrollamos software a medida, sitios web y aplicaciones
                 móviles de alta calidad.
               </p>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="w-72 h-auto bg-[#2F2E41] block mb-12 md:w-96 xsm:w-[450px]">
           <div className="flex flex-col mr-2 mb-2 -ml-2 -mt-2 w-72 md:w-96 h-80 md:h-[100%] xsm:w-[450px] bg-white hover:bg-lime-100 ">
-            <a href="/es/staff_augmentation">
+            <Link to="/servicios">
               <h2 className="flex justify-center items-center text-center text-[#6946B3] font-semibold text-xl md:text-2xl mt-5 mb-7 md:m-10 xsm:text-2xl xsm:mt-10 xsm:mb-10">
                 Mantenimiento de aplicaciónes
               </h2>
@@ -56,7 +57,7 @@ export const QueHacemos = () => {
                 aplicaciones, fortaleciendo las capacidades de tu equipo
                 interno.
               </p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

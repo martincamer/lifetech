@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const NuestrosServicios = () => {
   return (
     <section style={{ backgroundImage: "url('/Vector.svg')" }}>
@@ -7,24 +9,29 @@ export const NuestrosServicios = () => {
             title: "Desarrollo web",
             subtitle:
               "Creamos tu sitio web con pasión y precisión, llevando tus ideas más allá de lo esperado.",
+            link: "desarrollo-web",
           },
           {
             title: "Desarrollo de software",
             subtitle:
               "Creamos soluciones de software que superan expectativas, siempre buscando la excelencia y la innovación.",
+            link: "desarrollo-software",
           },
           {
             title: "Desarrollo de aplicaciones web",
             subtitle:
               "Creamos aplicaciones web donde la creatividad es el corazón de cada proyecto, impulsando soluciones innovadoras y funcionales.",
+            link: "desarrollo-app",
           },
           {
             title: "Desarrollo de aplicaciones móviles",
             subtitle:
               "En nuestro servicio de desarrollo de aplicaciones móviles, nos especializamos en transformar ideas en soluciones digitales innovadoras y funcionales. ",
+            link: "desarrollo-movil",
           },
         ].map((item, index) => (
-          <div
+          <Link
+            to={`/servicio/${item.link}`}
             key={index}
             className="flex flex-col items-center justify-center h-auto my-10 bg-transparent md:px-5 xsm:w-auto"
           >
@@ -36,7 +43,7 @@ export const NuestrosServicios = () => {
                 </span>
               </h2>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <div className="flex flex-col pb-12 items-center">

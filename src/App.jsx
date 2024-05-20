@@ -11,6 +11,7 @@ import { Work } from "./routes/Work.jsx";
 import { Blog } from "./routes/Blog.jsx";
 import { UnicoBlog } from "./routes/UnicoBlog.jsx";
 import { Contacto } from "./routes/Contacto.jsx";
+import { DesarrolloWeb } from "./routes/DesarrolloWeb.jsx";
 
 function App() {
   const location = useLocation();
@@ -35,6 +36,8 @@ function App() {
         return "Lifetech - Blog";
       case "/contacto":
         return "Lifetech - Contacto";
+      case "/servicio/desarrollo-web":
+        return "Lifetech - Desarollo web";
       default:
         return "Lifetech software solutions";
     }
@@ -52,6 +55,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:url" element={<UnicoBlog />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/servicio/desarrollo-web" element={<DesarrolloWeb />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

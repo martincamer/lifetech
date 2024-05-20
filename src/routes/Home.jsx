@@ -1,5 +1,5 @@
+import { NuestrosServicios } from "../components/servicios/NuestrosServicios";
 import { Contacto } from "../home/components/Contacto";
-import { Empresas } from "../home/components/Empresas";
 import { Intro } from "../home/components/Intro";
 import { Mensaje } from "../home/components/Mensaje";
 import { QueHacemos } from "../home/components/QueHacemos";
@@ -10,7 +10,7 @@ export const Home = () => {
       <Intro />
       <QueHacemos />
       <Contacto />
-      <Empresas />
+      <NuestrosServicios />
       <Mensaje />
     </main>
   );
