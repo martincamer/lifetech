@@ -12,6 +12,9 @@ import { Blog } from "./routes/Blog.jsx";
 import { UnicoBlog } from "./routes/UnicoBlog.jsx";
 import { Contacto } from "./routes/Contacto.jsx";
 import { DesarrolloWeb } from "./routes/DesarrolloWeb.jsx";
+import { DesarrolloSoftware } from "./routes/DesarrolloSoftware.jsx";
+import { DesarrolloAplicaciones } from "./routes/DesarrolloAplicaciones.jsx";
+import { DesarrolloMovil } from "./routes/DesarrolloMovil.jsx";
 
 function App() {
   const location = useLocation();
@@ -56,6 +59,18 @@ function App() {
         <Route path="/blog/:url" element={<UnicoBlog />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/servicio/desarrollo-web" element={<DesarrolloWeb />} />
+        <Route
+          path="/servicio/desarrollo-software"
+          element={<DesarrolloSoftware />}
+        />
+        <Route
+          path="/servicio/desarrollo-app"
+          element={<DesarrolloAplicaciones />}
+        />
+        <Route
+          path="/servicio/desarrollo-movil"
+          element={<DesarrolloMovil />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
